@@ -2,7 +2,7 @@
 dataset: pascal
 nclass: 21
 crop_size: 321
-data_root: /workspace/cjf8899/DATA/VOC
+data_root: your/pascal/path
 
 # arguments for model
 backbone: resnet101
