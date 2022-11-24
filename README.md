@@ -40,3 +40,11 @@ sh tool/eval.sh <num_gpu> <port>
 
 # ex : sh tool/eval.sh 4 23500
 ```
+## Result
+
+| Method           |  1/4 (2646) |
+| -----------------| ----------- |
+| CAFS(paper)      | 78.04       |
+| CAFS(re-imp-1)   | 78.04       |
+| CAFS(re-imp-2)   | 78.32       |
+| CAFS(re-imp-3)   | 78.05       |
