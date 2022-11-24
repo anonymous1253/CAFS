@@ -26,4 +26,4 @@ iou_samp: True
 # ACT
 conf_thre: True
 # segformer 
-use_segformer: True
+use_segformer: False
