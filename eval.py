@@ -61,10 +61,6 @@ def main():
         if rank == 0:
             logger.info('Total params: {:.1f}M\n'.format(count_params(model)))
 
-        optimizer = SGD([{'params': model.backbone.parameters(), 'lr': cfg['lr']},
-                         {'params': [param for name, param in model.named_parameters() if 'backbone' not in name],
-                          'lr': cfg['lr'] * cfg['lr_multi']}], lr=cfg['lr'], momentum=0.9, weight_decay=1e-4)
-
         local_rank = int(os.environ["LOCAL_RANK"])
         model = torch.nn.SyncBatchNorm.convert_sync_batchnorm(model)
         model.cuda()
@@ -76,10 +72,6 @@ def main():
         model = DeepLabV3Plus(cfg)
         if rank == 0:
             logger.info('Total params: {:.1f}M\n'.format(count_params(model)))
-
-        optimizer = SGD([{'params': model.backbone.parameters(), 'lr': cfg['lr']},
-                         {'params': [param for name, param in model.named_parameters() if 'backbone' not in name],
-                          'lr': cfg['lr'] * cfg['lr_multi']}], lr=cfg['lr'], momentum=0.9, weight_decay=1e-4)
 
         local_rank = int(os.environ["LOCAL_RANK"])
         model = torch.nn.SyncBatchNorm.convert_sync_batchnorm(model)
