@@ -12,5 +12,5 @@ dilations: [6, 12, 18]
 
 # segformer 
 # False : DeepLabV3+
-# True : Segformer-B4
+# True : SegFormer-B4
 use_segformer: False
