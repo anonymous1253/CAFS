@@ -38,5 +38,5 @@ sh tool/train.sh <num_gpu> <port>
 ```bash
 sh tool/eval.sh <num_gpu> <port>
 
-# ex : sh tool/train.sh 4 23500
+# ex : sh tool/eval.sh 4 23500
 ```
