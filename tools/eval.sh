@@ -1,7 +1,7 @@
 #!/bin/bash
 now=$(date +"%Y%m%d_%H%M%S")
 
-config=configs/pascal.yaml
+config=configs/pascal_eval.yaml
 model_config=configs/segformer_B4.py
 cafs_pretrained_path=cafs_pretrained/CAFS_1_4_resnet101_78.32_2.pth
 
