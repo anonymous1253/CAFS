@@ -1,0 +1,13 @@
+mmcv-full==1.2.7
+timm
+attr
+
+
+pyyaml>=5.4.0
+easydict
+tensorboardX
+opencv-python
+scipy
+sklearn
+scikit-image
+einops

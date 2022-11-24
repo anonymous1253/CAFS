@@ -1,0 +1,14 @@
+# arguments for dataset
+dataset: pascal
+nclass: 21
+crop_size: 321
+data_root: /workspace/cjf8899/DATA/VOC
+
+# arguments for model
+backbone: resnet101
+multi_grid: False
+replace_stride_with_dilation: [False, False, True]
+dilations: [6, 12, 18]
+
+# segformer 
+use_segformer: False
