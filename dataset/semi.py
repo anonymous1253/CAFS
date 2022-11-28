@@ -100,7 +100,7 @@ class SemiDataset_OSamp(Dataset):
                 for class_, weight in enumerate(class_iou):
                     if class_!=0 and weight<class_iou[1:].mean():
                         class_list = class_ids[class_].split('\n')[:-1]
-                        self.ids_ += class_list * math.ceil((class_iou[1:].mean()-weight)* 10 * 1.0)
+                        self.ids_ += class_list * math.ceil((class_iou[1:].mean()-weight)* 10) # lambda
                 self.ids = self.ids_ * math.ceil(nsample / len(self.ids))
 
             elif mode == 'train_u': 
