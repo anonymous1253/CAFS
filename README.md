@@ -47,6 +47,7 @@ sh tool/eval.sh <num_gpu> <port>
 | -----------------| ----------- |
 | ST++             | 76.6        |
 | UniMatch         | 77.2        |
+| -----------------| ----------- |
 | CAFS-V3(ours)    | 78.0        |
 | CAFS-B4(ours)    | 79.9        |
 
@@ -54,9 +55,11 @@ sh tool/eval.sh <num_gpu> <port>
 ## Re implementation result
 
 | Method              |  1/4 (2646) |
+| --------------------| ----------- |
 | CAFS-V3(re-imp-1)   | 78.04       |
 | CAFS-V3(re-imp-2)   | 78.32       |
 | CAFS-V3(re-imp-3)   | 78.05       |
+| --------------------| ----------- |
 | CAFS-B4(re-imp-1)   | TODO        |
 | CAFS-B4(re-imp-2)   | TODO        |
 | CAFS-B4(re-imp-3)   | TODO        |
