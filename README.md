@@ -22,7 +22,10 @@ CAFS
 └── cafs_pretrained
     ├── 1_CAFS_1_4_resnet101_78.04.pth
     ├── 2_CAFS_1_4_resnet101_78.32.pth
-    └── 3_CAFS_1_4_resnet101_78.05.pth
+    ├── 3_CAFS_1_4_resnet101_78.05.pth
+    ├── 1_CAFS_1_4_segf_b4_79.90.pth
+    ├── 2_CAFS_1_4_segf_b4_79.81.pth
+    └── 3_CAFS_1_4_segf_b4_79.99.pth
 ```
 ## Config
 You can control our methods in the [config file](https://github.com/anonymous1253/CAFS/blob/main/configs/pascal.yaml#L24-L29).
@@ -58,8 +61,8 @@ sh tool/eval.sh <num_gpu> <port>
 | CAFS-V3(re-imp-1)   | 78.04       |
 | CAFS-V3(re-imp-2)   | 78.32       |
 | CAFS-V3(re-imp-3)   | 78.05       |
-| CAFS-B4(re-imp-1)   | TODO        |
-| CAFS-B4(re-imp-2)   | TODO        |
-| CAFS-B4(re-imp-3)   | TODO        |
+| CAFS-B4(re-imp-1)   | 79.90       |
+| CAFS-B4(re-imp-2)   | 79.81       |
+| CAFS-B4(re-imp-3)   | 79.99       |
 
 Re implementation log files [link](https://drive.google.com/drive/folders/1VyvRo3unSsrIxthJ0eq1TaJIxvpothQn?usp=share_link)
